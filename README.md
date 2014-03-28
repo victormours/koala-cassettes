@@ -45,11 +45,7 @@ Contributing
 ------------
 
 Collaborators welcome!
-
-- Fork it
-- Send a pull request
-- ???
-- Profit
+Just fork the repo and send a pull request.
 
 Copyright
 ---------
