@@ -1,7 +1,7 @@
 koala-vcr
 =========
 
-KoalaVCR is a small VCR wrapper on a mission to testing with Koala.
+KoalaVCR is a small VCR wrapper on a mission to simplify testing with Koala.
 
 Synopsis
 --------
