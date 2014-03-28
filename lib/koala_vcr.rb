@@ -10,8 +10,9 @@ class KoalaVCR
 
   def self.use_cassette(name, options = {}, &block)
     TokenStubber.stub_token(token)
-    VCR.use_cassette(name, options, &block)
+    result = VCR.use_cassette(name, options, &block)
     TokenStubber.unstub_token
+    result
   end
 
   private

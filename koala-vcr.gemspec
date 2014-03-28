@@ -1,7 +1,7 @@
 Gem::Specification.new do |gem|
   gem.name         = "koala-vcr"
   gem.homepage     = "https://github.com/victormours/koala-vcr"
-  gem.version      = "0.0.0"
+  gem.version      = "0.0.1"
   gem.summary      = "KoalaVCR is a small VCR wrapper on a mission to testing with Koala."
   gem.description  = "KoalaVCR reads a Facebook oauth token from a file of your choosing and stubs Koala's oauth tokens inside your calls to VCR."
   gem.licenses     = ['MIT']

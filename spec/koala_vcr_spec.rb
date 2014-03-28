@@ -26,6 +26,11 @@ describe KoalaVCR do
         described_class.use_cassette("cassette", record: :all) {}
       end
 
+      it "returns the block's return value" do
+        result = described_class.use_cassette("cassette", record: :all) { "hello" }
+        expect(result).to eq "hello"
+      end
+
       it "unstubs the token after exiting" do
         described_class.use_cassette("cassette", record: :all) {}
 
