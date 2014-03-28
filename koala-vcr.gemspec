@@ -7,8 +7,8 @@ Gem::Specification.new do |s|
   s.files       = ["lib/koala_vcr.rb"]
 
   s.add_runtime_dependency "koala"
+  s.add_runtime_dependency "vcr"
 
   s.add_development_dependency "rspec", "~> 3.0.0.beta2"
-  s.add_development_dependency "vcr"
   s.add_development_dependency "pry"
 end
