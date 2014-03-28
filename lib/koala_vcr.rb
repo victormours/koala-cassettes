@@ -1,10 +1,10 @@
 require "koala"
-require "rspec"
 
 class KoalaVCR
+  autoload :TokenLoader, "koala_vcr/token_loader"
 
   def self.load_token(token_filename)
-    token = read_token(token_filename)
+    token = TokenLoader.read_token(token_filename)
     stub_koala_client(token)
   end
 
@@ -12,14 +12,10 @@ class KoalaVCR
 
   def self.stub_koala_client(token)
     Koala::Facebook::API.class_eval <<-RUBY
-      def initialize(token)
-        @access_token = "#{token}"
+      def access_token
+        "#{token}"
       end
     RUBY
-  end
-
-  def self.read_token(token_filename)
-    File.open(token_filename){ |file| file.readline.chomp }
   end
 
   def self.koala_client(token)
