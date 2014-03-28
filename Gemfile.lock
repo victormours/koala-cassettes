@@ -3,6 +3,7 @@ PATH
   specs:
     koala-vcr (0.0.0)
       koala
+      vcr
 
 GEM
   remote: http://rubygems.org/
@@ -36,6 +37,7 @@ GEM
       rspec-support (= 3.0.0.beta2)
     rspec-support (3.0.0.beta2)
     slop (3.4.7)
+    vcr (2.8.0)
 
 PLATFORMS
   ruby

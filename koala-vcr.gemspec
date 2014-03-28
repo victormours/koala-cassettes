@@ -1,7 +1,10 @@
 Gem::Specification.new do |s|
-  s.name = "koala-vcr"
-  s.version = "0.0.0"
-  s.summary     = "Easier Facebook auth token management for testing"
+  s.name        = "koala-vcr"
+  s.homepage = "https://github.com/victormours/koala-vcr"
+  s.version     = "0.0.0"
+  s.summary     = "KoalaVCR is a small VCR wrapper on a mission to testing with Koala."
+  s.description = "KoalaVCR reads a Facebook oauth token from a file of your choosing and stubs Koala's oauth tokens inside your calls to VCR."
+  s.licenses    = ['MIT']
   s.authors     = ["Victor Mours"]
   s.email       = 'victor.mours@gmail.com'
   s.files       = ["lib/koala_vcr.rb"]

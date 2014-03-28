@@ -1,7 +1,7 @@
 koala-vcr
 =========
 
-KoalaVCR is on a mission to simplify automated testing with Koala.
+KoalaVCR is a small VCR wrapper on a mission to testing with Koala.
 
 Synopsis
 --------
@@ -13,7 +13,7 @@ Get a valid Facebook oauth token for the page you use for testing and write it t
 
 Set the path to this file in your spec helper
 ```ruby
-require 'koal-vcr'
+require 'koal_vcr'
 
 KoalaVCR.token_filename = "/tmp/facebook_oauth_token"
 ```
@@ -24,7 +24,7 @@ describe "My amazing feature" do
   let(:graph) { Koala::Facebook::API.new("this can be an invalid token, i don't care") }
 
   it "posts stuff to Facebook" do
-    KoalaVCR.use_cassette("posting", record: :all) do
+    KoalaVCR.use_cassette("some_vcr_cassette", record: :all) do
       success = graph.put_connections("me", "feed", :message => "I am writing on my wall!")
     end
     expect(success).to be_truthy
@@ -32,4 +32,6 @@ describe "My amazing feature" do
 end
 ```
 
+Bam! Now go check out the cassette. The token used during the request is the one you specified earlier.
 
+Happy testing!
