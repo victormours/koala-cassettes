@@ -8,6 +8,16 @@ class KoalaVCR
     stub_koala_client(token)
   end
 
+  def self.use_cassette(name, options = {}, &block)
+    VCR.use_cassette(name, options, &block)
+  end
+
+  def self.unstub_token
+    Koala::Facebook::API.class_eval <<-RUBY
+      attr_accessor :access_token
+    RUBY
+  end
+
   private
 
   def self.stub_koala_client(token)

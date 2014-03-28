@@ -6,7 +6,7 @@ describe KoalaVCR::TokenLoader do
 
     it "returns the token string contained in the file" do
       token = described_class.read_token("spec/fixtures/token")
-      expect(token).to eq "secret-token"
+      expect(token).to eq "test-token"
     end
   end
 end
