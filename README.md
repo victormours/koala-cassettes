@@ -35,3 +35,23 @@ end
 Bam! Now go check out the cassette. The token used during the request is the one you specified earlier.
 
 Happy testing!
+
+Limitations
+-----------
+
+For now, KoalaVCR only implements VCR's `use_cassette`. If you'd like to see an other feature added, feel free to open an issue on Github.
+
+Contributing
+------------
+
+Collaborators welcome!
+
+- Fork it
+- Send a pull request
+- ???
+- Profit
+
+Copyright
+---------
+
+Copyright (c) 2014 Victor Mours. Released under the terms of the MIT license. See LICENSE for details.
