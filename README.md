@@ -13,7 +13,7 @@ Get a valid Facebook oauth token for the page you use for testing and write it t
 
 Set the path to this file in your spec helper
 ```ruby
-require 'koal_vcr'
+require 'koala_vcr'
 
 KoalaVCR.token_filename = "/tmp/facebook_oauth_token"
 ```
